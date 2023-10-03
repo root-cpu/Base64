@@ -84,7 +84,8 @@ def accion_codificar():
 
     texto_codificado = base64.b64encode(texto_original.encode()).decode()
     #return texto_codificado
-    print (texto_codificado)
+    print ("Tu texto codificado es: " + texto_codificado)
+    print (" ")
 
 def decodificar():
     salir = False
@@ -127,7 +128,8 @@ def accion_decodificar():
 
     texto_decodificado = base64.b64decode(texto_original).decode('utf-8')
     #return texto_codificado
-    print (texto_decodificado)
+    print ("Tu texto decodificado es: " + texto_decodificado)
+    print (" ")
 
 #VER SI PUEDO MEJORAR LAS FUNCIONES PASANDO PARAMETROS EN ELLAS
 #AGREGAR MAS CODIFICADORES APARTE DEL BASE64
